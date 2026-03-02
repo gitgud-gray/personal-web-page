@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel Angelo R. Dulay - Personal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #e9ecef;
+            color: #2575fc;
+        }
+        
+        section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2575fc;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .story {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .skills {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .project-card {
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 1rem;
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .blog-post {
+            border-left: 4px solid #2575fc;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 150px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            background-color: #e9ecef;
+            transform: translateY(-3px);
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .projects-grid, .blog-posts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="https://placehold.co/300x300/6a11cb/ffffff?text=N+A+R+D" alt="Noel Angelo R. Dulay" class="profile-img">
+            <h1>Noel Angelo R. Dulay</h1>
+            <p class="tagline">Aspiring Computer Science Student</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="story">
+                <h3>My Story</h3>
+                <p>I am a dedicated student passionate about learning computer science. Though I have no professional experience yet, I am eager to dive deep into the world of programming and technology. Currently, I know a little about Python and am excited to expand my knowledge and skills in this field.</p>
+                <br>
+                <p>Besides academics, I enjoy doing household chores and cooking. These activities help me stay organized and develop patience - qualities I believe are essential in programming as well.</p>
+            </div>
+            <div class="skills">
+                <h3>Skills & Interests</h3>
+                <ul>
+                    <li>Python (Beginner Level)</li>
+                    <li>Household Management</li>
+                    <li>Cooking & Food Preparation</li>
+                    <li>Problem Solving</li>
+                    <li>Attention to Detail</li>
+                    <li>Eagerness to Learn</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>As a beginner in programming, I don't have any coding projects to showcase yet. However, I have other practical skills:</p>
+        <br>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://placehold.co/300x200/4CAF50/white?text=Cooking+Skills" alt="Cooking Skills" class="project-img">
+                <div class="project-info">
+                    <h3>Kitchen Master</h3>
+                    <p>Proficient in preparing various dishes and managing kitchen tasks efficiently.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://placehold.co/300x200/2196F3/white?text=Home+Chores" alt="Home Chores" class="project-img">
+                <div class="project-info">
+                    <h3>House Maintenance</h3>
+                    <p>Skilled in organizing, cleaning, and maintaining household spaces.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://placehold.co/300x200/FF9800/white?text=Learning+Python" alt="Python Learning" class="project-img">
+                <div class="project-info">
+                    <h3>Python Basics</h3>
+                    <p>Currently learning fundamental programming concepts with Python.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Learning Journey</h2>
+        <div class="blog-posts">
+            <article class="blog-post">
+                <h3>Starting My CS Path</h3>
+                <p>Embarking on my journey to learn computer science. Taking one step at a time to build a strong foundation.</p>
+            </article>
+            <article class="blog-post">
+                <h3>Python Fundamentals</h3>
+                <p>Exploring variables, loops, and functions. Each concept is a building block for bigger projects.</p>
+            </article>
+            <article class="blog-post">
+                <h3>Future Goals</h3>
+                <p>Aiming to build real-world applications and contribute to open-source projects as I grow.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through my social media accounts:</p>
+        <div class="contact-links">
+            <a href="https://github.com/gitgud-" target="_blank" class="contact-link">
+                <div class="contact-icon">👨‍💻</div>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.facebook.com/zGray/" target="_blank" class="contact-link">
+                <div class="contact-icon">📘</div>
+                <span>Facebook</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Noel Angelo R. Dulay. All rights reserved.</p>
+        <p>Aspiring Computer Science Student | Eager to Learn</p>
+    </footer>
+</body>
+</html>
